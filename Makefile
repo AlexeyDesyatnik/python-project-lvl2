@@ -7,6 +7,9 @@ clean:
 build: clean
 	poetry build
 
+lint:
+	poetry run flake8 gendiff
+
 test:
 	poetry run gendiff ./test/testfile1.json ./test/testfile2.json
 
