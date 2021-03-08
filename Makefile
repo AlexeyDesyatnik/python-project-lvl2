@@ -1,11 +1,14 @@
+install:
+	poetry install
+
 clean:
 	rm -f dist/*
 
 build: clean
 	poetry build
 
-install:
-	poetry install
+test:
+	poetry run gendiff ./test/testfile1.json ./test/testfile2.json
 
 publish:
 	poetry publish --dry-run
@@ -21,4 +24,4 @@ gendiff:
 
 
 
-.PHONY:	gendiff
+.PHONY:	gendiff test
