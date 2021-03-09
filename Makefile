@@ -12,6 +12,7 @@ lint:
 
 test:
 	poetry run pytest --cov=gendiff
+	poetry run coverage json
 
 publish:
 	poetry publish --dry-run

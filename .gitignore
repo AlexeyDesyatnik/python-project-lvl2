@@ -5,6 +5,7 @@ __pycache__/
 
 # Coverage report
 .coverage
+coverage.json
 
 # C extensions
 *.so
