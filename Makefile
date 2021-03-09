@@ -11,7 +11,7 @@ lint:
 	poetry run flake8 gendiff
 
 test:
-	pytest
+	poetry run pytest
 
 publish:
 	poetry publish --dry-run
